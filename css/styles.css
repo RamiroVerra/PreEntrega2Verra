@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color:#94b1bd;
+  background-color:rgb(148, 177, 189);
 }
 
 li {
@@ -72,7 +72,7 @@ a {
 
 .navbar a:hover {
   background-color: #333;
-  color:#ccc;
+  color:rgb(204, 204, 204);
 }
 
 /* INICIO DEL MAIN */
@@ -86,7 +86,7 @@ a {
 }
 
 .img-text {
-  border: 2px solid #ffffff;
+  border: 2px solid rgb(245, 242, 242);
 }
 
 .img-text2 {
@@ -133,7 +133,7 @@ a {
 
 .footer p {
   margin-bottom: 10px;
-  color: #ccc; /* Cambiado a un tono más claro */
+  color: rgb(202, 201, 201); 
 }
 
 .footer ul {
@@ -143,17 +143,23 @@ a {
 }
 
 .footer a {
-  color: #ccc; /* Cambiado a un tono más claro */
+  color: rgb(209, 199, 199); 
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: #ddd; /* Cambiado a un tono más claro al pasar el ratón */
+  color: rgb(224, 212, 212); /* Cambiado a un tono más claro al pasar el ratón */
 }
 
 /* MEDIA QUERIES */
+
+
+
+
+
+
 
 /* MOBILE */
 @media only screen and (max-width: 500px) {
@@ -188,6 +194,34 @@ a {
     display: none;
   }
 
+  /*main*/
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  .primer-img-main{
+    
+      max-width: 100%;
+    }
+    .img-tripulacion{
+    
+      max-width: 100%;
+    
+  }
+
   /* footer */ 
   .footer-logo {
     margin-bottom: 10px; /*  entre el logo y el texto */
@@ -203,8 +237,17 @@ ul.list-unstyled li {
 
 }
 
+
+
+
+
+
+
+
+
 /* TABLET */
 @media only screen and (min-width: 501px) and (max-width: 960px) {
+     /* header*/
   .header {
     background-color: rgb(88, 72, 72);
   }
@@ -216,10 +259,61 @@ ul.list-unstyled li {
   .header-img {
     height: 350px;
   }
+
+  /*main*/
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+  h4 {
+    font-size: 1.3em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  .primer-img-main{
+    
+    max-width: 80%;
+  }
+
+  .img-tripulacion{
+    
+      max-width: 80%;
+    
+  }
+
+
+
+  /*footer*/
+  .footer-logo {
+    margin-bottom: 15px; /*  entre el logo y el texto */
 }
+
+ul.list-unstyled {
+    text-align: center;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 15px;
+}
+
+
+}
+
+
+
+
 
 /* DESKTOP */
 @media only screen and (min-width: 961px) and (max-width: 1920px) {
+   /*header*/
   .header {
     background-color: rgb(95, 95, 95);
   }
@@ -232,5 +326,44 @@ ul.list-unstyled li {
     height: 500px;
   }
 
+  /*main*/
+  body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    color: #333; /* Color del texto */
+  }
+
+  .img-tripulacion{
+    max-width: 100%;
+    height: auto;
+    display: block; /* Para corregir posibles márgenes de línea en algunas configuraciones */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+  }
+
+
+  /*footer*/
+  .footer-logo {
+    margin-bottom: 20px; /*  entre el logo y el texto */
+}
+
+ul.list-unstyled {
+    text-align: center;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 20px;
+}
  
 }
